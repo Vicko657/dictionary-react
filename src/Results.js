@@ -1,5 +1,6 @@
 import React from "react";
 import Meaning from "./Meaning";
+import Images from "./Images";
 import "./Results.css";
 
 export default function Results(props) {
@@ -11,18 +12,10 @@ export default function Results(props) {
           <h1 className="text-capitalize">{props.results.word}</h1>
           <h2 className="">/{props.results.phonetic}/</h2>
         </div>
-
-        {props.results.meanings.map(function (meaning, index) {
-          if (index < 3) {
-            return (
-              <div className="row" key={index}>
-                <Meaning meaning={meaning} />
-              </div>
-            );
-          } else {
-            return null;
-          }
-        })}
+        <div className="row">
+          <Meaning meaning={props.results} />
+          <Images photos={props.imgResults} />
+        </div>
       </div>
     );
   } else {
