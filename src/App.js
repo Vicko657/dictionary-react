@@ -4,11 +4,11 @@ import Dictionary from "./Dictionary";
 
 function App() {
   return (
-    <div className="App container">
+    <div className="App container d-flex row h-100">
       <header className="App-header">
         <img src={logo} className="App-logo img-fluid" alt="logo" />
       </header>
-      <main>
+      <main className="d-flex">
         <Dictionary />
       </main>
       <footer className="text-center">
