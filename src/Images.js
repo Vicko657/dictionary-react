@@ -10,7 +10,7 @@ export default function Images(props) {
           if (index < 2) {
             return (
               <img
-                className="word-img"
+                className="word-img img-fluid"
                 key={index}
                 src={photo.src.landscape}
                 alt={photo.alt}
