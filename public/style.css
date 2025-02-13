@@ -1,4 +1,31 @@
 body {
   background-color: black;
   color: white;
+  margin: 0 auto;
+  font-family: "Darker Grotesque", serif;
+}
+
+h1,
+h2,
+h3,
+p {
+  font-family: "Darker Grotesque", serif;
+}
+
+h1 {
+  font-size: 75px;
+  font-weight: 400;
+  margin: 0px;
+}
+h2 {
+  font-size: 20px;
+  top: 50px;
+  position: relative;
+  left: 10px;
+  color: gray;
+}
+p {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1;
 }
