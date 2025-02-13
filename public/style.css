@@ -29,3 +29,28 @@ p {
   font-size: 24px;
   line-height: 1;
 }
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 16px;
+    top: 43px;
+  }
+  p {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 525px) {
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 16px;
+    top: 32px;
+  }
+  p {
+    font-size: 18px;
+  }
+}

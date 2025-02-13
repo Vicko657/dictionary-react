@@ -44,7 +44,7 @@ export default function Dictionary(props) {
 
   if (loaded) {
     return (
-      <div className="d-flex row">
+      <div className="dictionary d-flex row">
         <form onSubmit={handleSubmit}>
           <input
             className="search-form-input"

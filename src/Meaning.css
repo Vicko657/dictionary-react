@@ -16,3 +16,28 @@ p.definition {
   font-size: 20px;
   color: gray;
 }
+
+@media (max-width: 1000px) {
+  .second-column {
+    padding: 20px;
+    border: none;
+  }
+}
+
+@media (max-width: 525px) {
+  p.definition {
+    width: 100%;
+  }
+  .first-column {
+    padding: 10px;
+  }
+  .second-column {
+    padding: 10px;
+    border: none;
+  }
+  .example {
+    font-weight: 600;
+    font-size: 14px;
+    color: gray;
+  }
+}

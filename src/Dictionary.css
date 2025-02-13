@@ -19,3 +19,12 @@ form .search-form-input {
 form .search-form-input:focus {
   outline: none;
 }
+
+@media (max-width: 1000px) {
+  .dictionary {
+    padding: 10px 30px 30px 30px;
+  }
+}
+
+@media (max-width: 525px) {
+}

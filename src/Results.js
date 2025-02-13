@@ -12,7 +12,7 @@ export default function Results(props) {
           <h1 className="text-capitalize">{props.results.word}</h1>
           <h2 className="">/{props.results.phonetic}/</h2>
         </div>
-        <div className="row">
+        <div className="row p-0">
           <Meaning meaning={props.results} />
           <Images photos={props.imgResults} />
         </div>

@@ -40,3 +40,12 @@ footer a:hover {
   color: lightgrey !important;
   border: none !important;
 }
+
+@media (max-width: 1000px) {
+}
+
+@media (max-width: 525px) {
+  footer {
+    font-size: 14px;
+  }
+}
