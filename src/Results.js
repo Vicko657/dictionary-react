@@ -1,5 +1,6 @@
 import React from "react";
 import Meaning from "./Meaning";
+
 export default function Results(props) {
   console.log(props.results);
   if (props.results) {
@@ -7,6 +8,7 @@ export default function Results(props) {
       <div className="Results d-flex row">
         <div className="row">
           <h1>{props.results.word}</h1>
+          <h2>{props.results.phonetic}</h2>
         </div>
 
         {props.results.meanings.map(function (meaning, index) {
