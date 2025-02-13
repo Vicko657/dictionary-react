@@ -18,11 +18,11 @@ function App() {
             Victoria Olusegun
           </a>
           on
-          <a href="https://github.com/Vicko657/Outlook-App" target="blank">
+          <a href="https://github.com/Vicko657/dictionary-react" target="blank">
             Github
           </a>
           and website hosted on
-          <a href="https://vix-weather-react.netlify.app/" target="blank">
+          <a href="https://vix-dictionary-react.netlify.app/" target="blank">
             Netlify
           </a>
         </footer>
