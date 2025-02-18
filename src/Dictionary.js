@@ -4,10 +4,10 @@ import Results from "./Results";
 import "./Dictionary.css";
 
 export default function Dictionary(props) {
-  let [keyword, setKeyword] = useState(props.defaultKeyword);
-  let [results, setResults] = useState(null);
-  let [imgResults, setImgResults] = useState(null);
-  let [loaded, setLoaded] = useState(false);
+  const [keyword, setKeyword] = useState(props.defaultKeyword);
+  const [results, setResults] = useState(null);
+  const [imgResults, setImgResults] = useState(null);
+  const [loaded, setLoaded] = useState(false);
 
   function handleResponse(response) {
     setResults(response.data);
@@ -19,12 +19,12 @@ export default function Dictionary(props) {
   }
 
   function search() {
-    let apiKey = "t6a8db7630cb9o483fccd0984e54c304";
-    let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
+    const apiKey = process.env.REACT_APP_DICTIONARY_ANON_KEY;
+    const apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
     axios.get(apiUrl).then(handleResponse);
 
-    let imgapiKey = "t6a8db7630cb9o483fccd0984e54c304";
-    let imgapiUrl = `https://api.shecodes.io/images/v1/search?query=${keyword}&key=${imgapiKey}`;
+    const imgapiKey = process.env.REACT_APP_DICTIONARY_IMAGE_ANON_KEY;
+    const imgapiUrl = `https://api.shecodes.io/images/v1/search?query=${keyword}&key=${imgapiKey}`;
     axios.get(imgapiUrl).then(handleImgResponse);
   }
 

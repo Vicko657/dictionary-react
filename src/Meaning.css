@@ -6,7 +6,6 @@
 }
 .second-column {
   padding: 20px;
-  border-right: 1px solid grey;
 }
 p.definition {
   width: 90%;
@@ -16,9 +15,17 @@ p.definition {
   font-size: 20px;
   color: gray;
 }
+.third-column {
+  padding: 20px;
+  border-left: 1px solid grey;
+}
 
 @media (max-width: 1000px) {
   .second-column {
+    padding: 20px;
+    border: none;
+  }
+  .third-column {
     padding: 20px;
     border: none;
   }
